@@ -1,3 +1,3 @@
-# React + Flux: Module 1
+# React + Flux: Module 2
 
 
