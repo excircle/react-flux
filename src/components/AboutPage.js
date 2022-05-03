@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import '../Basic.css';
 
 class AboutPage extends React.Component {
     render() {
@@ -6,7 +8,7 @@ class AboutPage extends React.Component {
             <React.Fragment>
                 <h2>About</h2>
                 <p>This app uses React.</p>
-                <a href="/">Home Page</a>
+                <Link to="/">Home Page</Link>
             </React.Fragment>
         )
     }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getCourses } from "../api/courseApi";
 import CourseList from "./CourseList";
+import '../Basic.css';
 
 function CoursesPage() {
   const [ courses, setCourses ] = useState([]);
