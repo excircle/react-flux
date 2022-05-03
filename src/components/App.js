@@ -16,6 +16,7 @@ function App() {
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/course/:slug" element={<ManageCoursePage />} />
+            <Route path="/course/" element={<ManageCoursePage />} />
             <Route path="*" element={<NotFoundPage />} />
             <Route path="/about-page" element={<Navigate replace to="/about" />} />
           </Routes>

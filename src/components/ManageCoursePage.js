@@ -1,12 +1,23 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useState }  from "react";
+import CourseForm from "./CourseForm";
 
 const ManageCoursePage = props => {
-    let { slug } = useParams();
+    const [course, setCourse] = useState({
+        id: null,
+        slug: "",
+        title: "",
+        authorId: null,
+        category: ""
+    });
+
+    function handleChange(event) {
+        const updatedCourse = {...course, [event.target.name]: event.target.value};
+        setCourse(updatedCourse)
+    }
     return (
         <React.Fragment>
-            <h2>Courses</h2>
-            <p>{slug}</p>
+            <h2>Manage Course</h2>
+            <CourseForm course={course} onChange={handleChange} />
         </React.Fragment>
     )
 }
