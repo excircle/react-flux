@@ -4,7 +4,7 @@ import SelectInput from "./common/SelectInput";
 
 function CourseForm(props) {
   return (
-    <form>
+    <form onSubmit={props.onSubmit}>
       <TextInput
         id="title"
         label="Title"
@@ -15,6 +15,7 @@ function CourseForm(props) {
 
       <SelectInput
         id="author"
+        label="Author"
         name="authorId"
         onChange={props.onChange}
         value={props.course.authorId || ""}

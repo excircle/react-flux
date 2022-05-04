@@ -17,10 +17,11 @@ function SelectInput(props) {
             onChange={props.onChange}
             className="form-control"
             value={props.value}
-          />
+          >
           <option value="" />
           <option value="1" >Cory House</option>
           <option value="2" >Scott Allen</option>
+          </select>
         </div>
         { props.error && <div className="alert alert-danger">{props.error}</div> }
       </div>
