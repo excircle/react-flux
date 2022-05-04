@@ -23,7 +23,9 @@ function SelectInput(props) {
           <option value="2" >Scott Allen</option>
           </select>
         </div>
-        { props.error && <div className="alert alert-danger">{props.error}</div> }
+        { props.error.authorId && (
+        <div className="alert alert-danger">{props.error.authorId}</div> 
+        )}
       </div>
     )
 }
